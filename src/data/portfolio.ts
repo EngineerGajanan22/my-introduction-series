@@ -6,6 +6,9 @@
 
 export type Palette = { from: string; via: string; to: string; accent: string };
 
+const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const asset = (path: string) => `${BASE}${path.replace(/^\//, '')}`;
+
 export const profile = {
   fullName: 'Gajanan Gangakhedkar',
   displayName: 'Gajanan Gangakhedkar',
@@ -24,10 +27,10 @@ export const profile = {
     linkedin: 'https://www.linkedin.com/in/gajanan-gangakhedkar',
     github: 'https://github.com/EngineerGajanan22',
   },
-  resumePdf: '/assets/Gajanan_Gangakhedkar_Resume.pdf',
+  resumePdf: asset('assets/Gajanan_Gangakhedkar_Resume.pdf'),
   portrait: {
-    src: '/assets/portrait-720.webp',
-    srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
+    src: asset('assets/portrait-720.webp'),
+    srcSet: `${asset('assets/portrait-420.webp')} 420w, ${asset('assets/portrait-720.webp')} 720w, ${asset('assets/portrait-1100.webp')} 1100w`,
     alt: 'Portrait of Gajanan Gangakhedkar',
   },
   interests: ['Scalable Web Architecture', 'RESTful API Engineering', 'Generative AI Integration'],
