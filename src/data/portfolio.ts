@@ -19,7 +19,7 @@ export const profile = {
     'PHP Software Developer with 1 year of experience in PHP, Laravel, MySQL, JavaScript, HTML, and CSS. Skilled in Laravel MVC, RESTful APIs, CRUD operations, authentication, validation, and database integration, building scalable and secure web applications.',
   location: 'Pune, Maharashtra',
   phone: '9373444585',
-  email: 'gajanangangakhedkar@gmail.com',
+  email: 'gangakhedkargajanan91@gmail.com',
   links: {
     linkedin: 'https://www.linkedin.com/in/gajanan-gangakhedkar',
     github: 'https://github.com/EngineerGajanan22',
